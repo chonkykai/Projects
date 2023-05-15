@@ -29,12 +29,13 @@ In summary, there are 899,002 rows and 12 columns after feature engineering. The
 
 The image below shows the top 5 rows of the dataframe after data cleaning and feature engineering.
 
-<img src="./images/head.png" alt="corr" width="500" height="500">
+![Alt Text](./images/head.png)
+
 
 
 ### Correlation Matrix
 
-<img src="./images/corr.png" alt="corr" width="400" height="400">
+![Alt Text](./images/corr.png)
 
 Correlation matrix observations:
 
@@ -46,7 +47,7 @@ More graph visualisations must been done to further understand this dataset.
 
 ### Describing Dataset
 
-<img src="./images/describe.png" alt="describe" width="300" height="300">
+![Alt Text](./images/describe.png)
 
 Remarks: 
 1. This shows the standard statistics of dataframe
@@ -56,7 +57,7 @@ Remarks:
 
 ### Histogram: Resale Price
 
-<img src="./images/histogram.png" alt="hist" width="500" height="500">
+![Alt Text](./images/histogram.png)
 
 Remarks:
 
@@ -67,7 +68,7 @@ Remarks:
 
 ### Histogram: Demand of Resale Houses Over Time
 
-<img src="./images/histogram2.png" alt="hist" width="300" height="300">
+![Alt Text](./images/histogram2.png)
 
 Observations:
 1. There is a spike in 1995-1999. This is due to HDB announcing that singles above 35 years old are eligible to purchase HDB resale flats but limited to 3 room flats at selected location. [link](https://www.todayonline.com/singapore/timeline-singapores-public-housing-policy-singles)
@@ -75,7 +76,7 @@ Observations:
 
 ### Lineplot: Resale Houses Prices Over Time
 
-<img src="./images/lineplot.png" alt="line" width="300" height="300">
+![Alt Text](./images/lineplot.png)
 
 Observations:
 
@@ -86,7 +87,7 @@ It is observed that there prices of houses are consistently rising over the year
 
 ### Countplot: Count Of Houses In Various Towns 
 
-<img src="./images/count.png" alt="count" width="300" height="300">
+![Alt Text](./images/count.png)
 
 Observations:
 
@@ -96,7 +97,7 @@ Observations:
 
 ### Lineplot: Floor Area Over Time
 
-<img src="./images/floor.png" alt="floor" width="300" height="300">
+![Alt Text](./images/floor.png)
 
 Observations:
 1. It is observed that there is a there was a trend of floor square area increasing from 1990s to 2000. From there, the house sizes are seen to be fluctuating around 97.5 to 95 square area. 
@@ -104,7 +105,7 @@ Observations:
 
 ### Countplot: Count Of Flat Model
 
-<img src="./images/count2.png" alt="count2" width="300" height="300">
+![Alt Text](./images/count2.png)
 
 Observations:
 1. It is observed that most of the houses are built in model A, Improved and New Generation
@@ -113,7 +114,7 @@ Observations:
 
 ### Countplot: Count Of Flat Type
 
-<img src="./images/count3.png" alt="count3" width="300" height="300">
+![Alt Text](./images/count3.png)
 
 Observations:
 
@@ -122,7 +123,7 @@ Observations:
 
 ### Countplot: Count Of Political Parties
 
-<img src="./images/count4.png" alt="count4" width="200" height="200">
+![Alt Text](./images/count4.png)
 
 This observation shows that majority of the areas over the years in singapore are overseen by PAP. 
 
@@ -130,7 +131,7 @@ This observation shows that majority of the areas over the years in singapore ar
 
 ### Base Modeling - Linear Regression Model
 
-<img src="./images/linear.png" alt="linear" width="200" height="200">
+![Alt Text](./images/linear.png)
 
 The graph above provides insights into the model's performance in predicting housing prices. The presence of a linear trend suggests a general relationship between the predicted and true values.
 
@@ -152,7 +153,7 @@ Given these findings, it is necessary to explore alternative models or technique
 
 ### Ridge CV
 
-<img src="./images/ridge.png" alt="ridge" width="300" height="300">
+![Alt Text](./images/ridge.png)
 
 The observation of a systematic bias in the predicted values against the true values indicates that the model, similar to the base model, consistently deviates from the ideal linear relationship. This bias suggests that the model has a tendency to either overestimate or underestimate the true values consistently. This could be a result of various factors such as the model's underlying assumptions or limitations in capturing the complexity of the data.
 
@@ -164,7 +165,7 @@ Hyperparameter tuning was conducted on the RidgeCV model, resulting in a train s
 
 ### Lasso CV
 
-<img src="./images/lasso.png" alt="lasse" width="300" height="300">
+![Alt Text](./images/lasso.png)
 
 Similar to the base model, there are still observation of systematic bias and uncertainty of model predictions.
 
@@ -174,7 +175,7 @@ In the context of hyperparameter tuning on LassoCV, it was observed that both th
 
 ### Elastic Net
 
-<img src="./images/enet.png" alt="enet" width="300" height="300">
+![Alt Text](./images/enet.png)
 
 It is observed that there is still some form of systematic bias in the predicted values against true values. In addition, there is indication of large scatter in data points. This indicates presense of prediction error.
 
@@ -184,7 +185,7 @@ Upon employing ElasticNetCV, the train score and test score were determined to b
 
 ### Neural Network
 
-<img src="./images/epoc.png" alt="epoc" width="300" height="300">
+![Alt Text](./images/epoc.png)
 
 The observed graph of the training loss as training progresses provides valuable insights into the performance and convergence of the model. The significant dip in loss after the second epoch indicates that the model quickly started to learn and improve its predictions. This initial improvement is often observed as the model adjusts its parameters to better fit the training data.
 
@@ -194,7 +195,7 @@ The consistent decrease and plateauing of the loss indicate that there is no sig
 
 Overall, the observed graph indicates that the model is performing effectively and has reached a stable state with low training loss. This suggests that the model is well-suited for the given task and demonstrates its ability to make accurate predictions without overfitting or underfitting.
 
-<img src="./images/nn.png" alt="nn" width="300" height="300">
+![Alt Text](./images/nn.png)
 
 The observed scatter of data points evenly distributed both above and below the diagonal line suggests a lack of systematic bias in the model's predictions. The absence of a consistent overestimation or underestimation of true values indicates that the model does not exhibit a strong bias towards any particular direction.
 
@@ -210,7 +211,7 @@ In light of these findings, it becomes evident that the model's performance need
 
 ### XG Boost
 
-<img src="./images/xgb.png" alt="xgb" width="300" height="300">
+![Alt Text](./images/xgb.png)
 
 The observed even spread of data points above and below the diagonal line in the plot indicates that there is a relatively low systematic bias in the model's predictions. When the data points are evenly distributed on both sides of the diagonal line, it suggests that the model does not consistently overestimate or underestimate the true values. This balanced distribution implies that the model's predictions are generally unbiased and not skewed towards any particular direction.
 
