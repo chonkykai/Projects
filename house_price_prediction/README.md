@@ -1,7 +1,18 @@
 # HDB Resale House Price Prediction
 
 ## Preface
-The issue of home affordability in Singapore has become increasingly prevalent in recent years. As highlighted in a recent article published by [The Straits Time](https://www.straitstimes.com/singapore/housing/hdb-resale-prices-rise-09-in-q1-smallest-increase-in-last-10-quarters#:~:text=In%20recent%20years%2C%20the%20issue,the%20private%20residential%20property%20market.), the resale prices of Housing and Development Board (HDB) flats have risen significantly by 31.9 percent over the past 12 quarters, surpassing the 27.9 percent increase observed in the private residential property market during the same period. Furthermore, the escalating costs and lengthy waiting [time](https://www.straitstimes.com/singapore/housing/bto-flat-waiting-times-between-4-and-5-years-even-with-covid-19-delays-desmond-lee) for Build-To-Order (BTO) flats have dissuaded numerous newlywed couples from purchasing them, leading to a surge in demand for HDB resale flats. Against this backdrop, the prediction of HDB resale house prices serves as a valuable tool to assist both buyers and sellers in making informed decisions.
+The issue of home affordability in Singapore has become increasingly prevalent in recent years. As highlighted in a recent article published by [The Straits Time](https://www.straitstimes.com/singapore/housing/hdb-resale-prices-rise-09-in-q1-smallest-increase-in-last-10-quarters#:~:text=In%20recent%20years%2C%20the%20issue,the%20private%20residential%20property%20market.), the resale prices of Housing and Development Board (HDB) flats have risen significantly by 31.9 percent over the past 12 quarters, surpassing the 27.9 percent increase observed in the private residential property market during the same period. The rise in resale flat prices in Singapore can be attributed to several factors: 
+1. Limited supply: The supply of public housing in Singapore is limited compared to the high demand. The government's efforts to control the population growth and maintain a sustainable housing market have led to a controlled supply of new flats. This scarcity of supply puts upward pressure on resale flat prices. [Link](https://www.channelnewsasia.com/commentary/hdb-public-housing-bto-affordability-accessibility-supply-demand-3259186)
+2. Population growth and immigration: Singapore's population growth grew from 4.03 million in 2000 to 5.7 million in 2019. A 41% increase over 20 years. The increase in population creates higher demand for housing, including resale flats, leading to price appreciation. [Link](https://www.straitstimes.com/singapore/curb-population-growth-to-reduce-housing-demand-need-to-clear-forests-leong-mun-wai)
+
+3. Land scarcity: Singapore has limited land resources, and finding suitable land for new housing developments can be challenging. As a result, land prices are high, and the cost of construction and land acquisition is reflected in the resale flat prices. 
+4. Housing policies: The Singapore government has implemented various policies to promote home ownership and provide affordable housing options. However, some of these policies, such as the Central Provident Fund (CPF) housing grants and restrictions on the purchase of new flats by certain groups, can contribute to increased demand for resale flats, thereby pushing up prices. 
+5. Economic growth and prosperity: Singapore's strong economy and high standard of living contribute to the affordability of housing. As people become more affluent, they may be willing to pay higher prices for better quality and well-located resale flats. 
+6. Renovation and upgrading: Many resale flat buyers prefer flats that have undergone renovation or upgrading. The cost of these renovations and improvements, along with the added value they bring, can contribute to higher resale flat prices. 
+7. Speculation and investment: Some buyers purchase resale flats as an investment, hoping to benefit from potential capital appreciation over time. Speculative activities can drive up prices in the resale flat market. 
+8. Inflation and construction costs: Inflation and rising construction costs can also contribute to the increase in resale flat prices. As the cost of construction materials, labor, and land acquisition rises, developers and sellers may adjust their prices accordingly. 
+
+Furthermore, the escalating costs and lengthy waiting [time](https://www.straitstimes.com/singapore/housing/bto-flat-waiting-times-between-4-and-5-years-even-with-covid-19-delays-desmond-lee) for Build-To-Order (BTO) flats have dissuaded numerous newlywed couples from purchasing them, leading to a surge in demand for HDB resale flats. Against this backdrop, the prediction of HDB resale house prices serves as a valuable tool to assist both buyers and sellers in making informed decisions.
 
 ## Project Stakeholder
 
@@ -91,7 +102,7 @@ It is observed that there prices of houses are consistently rising over the year
 
 Observations:
 
-1. This count plot shows the resale housing in certain towns. Right off the bat, Tampines, bedok, woodlands and yishun have one of the highest counts in resale.
+1. This count plot shows the resale housing in certain towns. Right off the bat, Tampines, Bedok and yishun have one of the highest counts in resale.
 2. Whereas Lim Chu Kang is the lowest in count for resale housing.
 3. This also indicates that there is high population of people living in these areas.
 
@@ -110,7 +121,8 @@ Observations:
 Observations:
 1. It is observed that most of the houses are built in model A, Improved and New Generation
 2. This also indicates that the general population of houses are built in model A, Improved and New Generation.
-3. Potential buyers should potentially lookout for these houses as it would mean that these houses would be hotter in demand since it is regularly sold and bought on the propert market.
+3. Potential buyers should potentially lookout for these houses as it would mean that these houses would be hotter in demand since it is regularly sold and bought on the property market.
+4. It is important to note that most of these models are obsolete as most of the flat models have been discontinued in the early 1990s. To check for the flat model, check out the [lease commencement date](https://services2.hdb.gov.sg/web/fi10/emap.html), followed by cross referencing the year that the flat was made in this [Link](https://www.teoalida.com/singapore/hdbflattypes/).
 
 ### Countplot: Count Of Flat Type
 
@@ -125,7 +137,11 @@ Observations:
 
 ![Alt Text](./images/count4.png)
 
-This observation shows that majority of the areas over the years in singapore are overseen by PAP. 
+Observations:
+
+1. Political parties were added in as it could be a factor that affects housing prices.
+
+2. This graph shows that majority of the areas over the years in singapore are overseen by rulling party. 
 
 ## Modeling
 
@@ -141,9 +157,9 @@ Furthermore, the scatter of data points around the diagonal line suggests a cert
 
 #### Discussions 
 
-After fitting a linear regression model on the dataset, obtaining a train score and test score of 83.6% suggests that the model performs reasonably well on both the training and test data. The matching scores indicate that there is no apparent sign of overfitting or underfitting, which is generally desirable and the RMSE score is 65,976.
+After fitting a linear regression model on the dataset, obtaining a train score and test score of 83.6% suggests that the model performs reasonably well on both the training and test data. The matching scores indicate that there is no apparent sign of overfitting or underfitting, which is generally desirable and the RMSE score is 66,048.
 
-However, the cross-validation score of -6.05e+22 indicates a significant issue. This negative score strongly suggests the presence of model overfitting. Overfitting occurs when the model becomes too complex and starts capturing noise or irrelevant patterns from the training data. Consequently, it performs poorly on unseen data during cross-validation, resulting in a negative mean score.
+However, the cross-validation score of -1.08e+23 indicates a significant issue. This negative score strongly suggests the presence of model overfitting. Overfitting occurs when the model becomes too complex and starts capturing noise or irrelevant patterns from the training data. Consequently, it performs poorly on unseen data during cross-validation, resulting in a negative mean score.
 
 The negative cross-validation score highlights the bad generalization of the model. It implies that the model's ability to accurately predict new, unseen data is severely compromised due to its overfitting behavior.
 
@@ -161,7 +177,7 @@ Furthermore, the scatter of data points around the diagonal line indicates the p
 
 #### Observations
 
-Hyperparameter tuning was conducted on the RidgeCV model, resulting in a train score and test score both standing at 83.6%. This parity suggests that the model is not suffering from overfitting or underfitting issues. However, upon evaluating the root mean squared error (RMSE) score of the tuned RidgeCV model, it was found to be slightly higher than that of the base model, measuring at 66,036. Consequently, it can be concluded that although the model's fitting appears to be satisfactory, there is still room for improvement in terms of predictive accuracy. The R^2 scores and RMSE scores can be further enhanced through additional experimentation and refinement of the model's hyperparameters, potentially leading to a more accurate and precise model for the given task.
+Hyperparameter tuning was conducted on the RidgeCV model, resulting in a train score and test score both standing at 83.6%. This parity suggests that the model is not suffering from overfitting or underfitting issues. However, upon evaluating the root mean squared error (RMSE) score of the tuned RidgeCV model, it was found to be slightly higher than that of the base model, measuring at 66,048. Consequently, it can be concluded that although the model's fitting appears to be satisfactory, there is still room for improvement in terms of predictive accuracy. The $R^2$ scores and RMSE scores can be further enhanced through additional experimentation and refinement of the model's hyperparameters, potentially leading to a more accurate and precise model for the given task.
 
 ### Lasso CV
 
@@ -181,7 +197,7 @@ It is observed that there is still some form of systematic bias in the predicted
 
 #### Observations
 
-Upon employing ElasticNetCV, the train score and test score were determined to be 81.5% and 81.6% respectively. This suggests that the model is exhibiting a balanced performance without any notable signs of overfitting or underfitting. However, when assessing the root mean squared error (RMSE) score, it was found to be 70,043, which indicates a higher level of error compared to the other models previously evaluated. Consequently, it can be concluded that the ElasticNetCV model is underperforming in comparison to the previously employed models. This outcome indicates that further exploration and investigation may be necessary to improve the model's predictive accuracy and decrease the RMSE score. Alternative models could be explored to potentially enhance the model's performance in the given task.
+Upon employing hyperparameter tuning on ElasticNetCV, the train score and test score were determined to be 81.4% respectively. This suggests that the model is exhibiting a balanced performance without any notable signs of overfitting or underfitting. However, when assessing the root mean squared error (RMSE) score, it was found to be 70,276, which indicates a higher level of error compared to the other models previously evaluated. Consequently, it can be concluded that the ElasticNetCV model is underperforming in comparison to the previously employed models. This outcome indicates that further exploration and investigation may be necessary to improve the model's predictive accuracy and decrease the RMSE score. Alternative models could be explored to potentially enhance the model's performance in the given task.
 
 ### Neural Network
 
@@ -197,9 +213,9 @@ Overall, the observed graph indicates that the model is performing effectively a
 
 ![Alt Text](./images/nn.png)
 
-The observed scatter of data points evenly distributed both above and below the diagonal line suggests a lack of systematic bias in the model's predictions. The absence of a consistent overestimation or underestimation of true values indicates that the model does not exhibit a strong bias towards any particular direction.
+The observed scatter of data points were slightly distributed below the diagonal line suggests that the model tends to underestimate the true values. This indicates a lack of systematic bias in the model's predictions. 
 
-However, despite the lack of systematic bias, the fact that the data points are still widely scattered around the diagonal line indicates a high degree of prediction error. The scattered distribution suggests that the model struggles to accurately predict the true values and exhibits a significant level of variability in its predictions. This high prediction error implies that the model may not be effectively capturing the underlying patterns and relationships within the data.
+It is also observed that the fact that the data points are still widely scattered around the diagonal line indicates a high degree of prediction error. The scattered distribution suggests that the model struggles to accurately predict the true values and exhibits a significant level of variability in its predictions. This high prediction error implies that the model may not be effectively capturing the underlying patterns and relationships within the data.
 
 #### Observations
 
@@ -213,30 +229,32 @@ In light of these findings, it becomes evident that the model's performance need
 
 ![Alt Text](./images/xgb.png)
 
-The observed even spread of data points above and below the diagonal line in the plot indicates that there is a relatively low systematic bias in the model's predictions. When the data points are evenly distributed on both sides of the diagonal line, it suggests that the model does not consistently overestimate or underestimate the true values. This balanced distribution implies that the model's predictions are generally unbiased and not skewed towards any particular direction.
+The analysis of the data points in relation to the diagonal line reveals interesting insights about the model's performance. The initial observation of a relatively even spread of data points above and below the diagonal line indicates that the model's predictions have some degree of deviation from the true values. However, a closer inspection reveals that some of the data points are slightly above the diagonal line, suggesting a tendency of the model to slightly overestimate the true values.
 
-Moreover, the close clustering of data points around the diagonal line suggests that the model's predictions are relatively accurate. When the data points are tightly grouped around the diagonal line, it indicates that the predicted values are closer to the true values. This indicates a good level of agreement between the model's predictions and the actual observed values.
+The presence of data points above the diagonal line implies that the model consistently predicts values that are higher than the actual values. Although this overestimation is slight, it indicates a systematic bias in the model's predictions. The reasons for this bias could be multifaceted and require future investigations. 
+
+On a positive note, the close clustering of data points around the diagonal line indicates that, on average, the model's predictions are relatively accurate. When the data points are tightly grouped around the diagonal line, it suggests that the predicted values closely align with the true values. This clustering and proximity of data points to the diagonal line are indicative of a good level of agreement between the model's predictions and the actual observed values.
 
 #### Observations
 
-Upon conducting hyperparameter tuning on XGBoost, it is evident that the train and test R-squared scores remain consistently high, at 98.2% and 98.4% respectively. Although these scores are lower compared to the neural network model's R-squared score of 99.9%, a notable advantage of XGBoost lies in its significantly lower root mean squared error (RMSE) scores. With an RMSE score of 21,592, XGBoost outperforms the neural network model's RMSE score of 61,779.
+Upon conducting hyperparameter tuning on XGBoost, it is evident that the train and test R-squared scores remain consistently high, at 98.2% and 98.4% respectively. Although these scores are lower compared to the neural network model's R-squared score of 99.9%, a notable advantage of XGBoost lies in its significantly lower root mean squared error (RMSE) scores. With an RMSE score of 21,620, XGBoost outperforms the neural network model's RMSE score of 60,929.
 
-The lower RMSE score indicates that the XGBoost model is more accurate in predicting resale house pricing, with an average prediction error range of approximately ±21,592. This discrepancy in RMSE scores indicates that XGBoost is not suffering from overfitting or underfitting, making it a strong candidate for selecting a model to predict house prices. Despite the slightly lower R-squared scores compared to the neural network, the combination of high R-squared scores and low RMSE scores reinforces the effectiveness and reliability of the XGBoost model for accurate price predictions in the resale housing market.
+The lower RMSE score indicates that the XGBoost model is more accurate in predicting resale house pricing, with an average prediction error range of approximately ±21,620. This discrepancy in RMSE scores indicates that XGBoost is not suffering from overfitting or underfitting, making it a strong candidate for selecting a model to predict house prices. Despite the slightly lower R-squared scores compared to the neural network, the combination of high R-squared scores and low RMSE scores reinforces the effectiveness and reliability of the XGBoost model for accurate price predictions in the resale housing market.
 
 ## Main Discussion
 
 | Model                     | Train R-squared (%) | Test R-squared (%) | RMSE   |
 |:-------------------------:|:-------------------:|:------------------:|:------:|
-| Linear Regression         | 83.6                | 83.6               | 65,976 |
-| RidgeCV (Tuned)           | 83.6                | 83.6               | 66,036 |
+| Linear Regression         | 83.6                | 83.6               | 66,048 |
+| RidgeCV (Tuned)           | 83.6                | 83.6               | 66,048 |
 | LassoCV (Tuned)           | 83.6                | 83.6               | 66,060 |
-| ElasticNetCV (Tuned)      | 81.5                | 81.6               | 70,043 |
-| Neural Network            | 99.9                | 99.9               | 61,779 |
-| XGBoost (Tuned)           | 98.2                | 98.4               | 21,592 |
+| ElasticNetCV (Tuned)      | 81.5                | 81.6               | 70,276 |
+| Neural Network            | 99.9                | 99.9               | 60,929 |
+| XGBoost (Tuned)           | 98.2                | 98.4               | 21,620 |
 
-Based on the provided table, it is evident that XGBoost outperforms other models with hyperparameter tuning in terms of both the R-squared score and RMSE. XGBoost demonstrates the highest R-squared score and the lowest RMSE score among the models considered.
+Based on the provided table, it is evident that XGBoost outperforms other models with hyperparameter tuning in terms of both the R-squared score and RMSE. XGBoost demonstrates the highest R-squared score and the lowest RMSE score among the models considered. 
 
-Comparing XGBoost to the base model, which is linear regression, the improvement in performance is striking. XGBoost exhibits an 18% increase in the R-squared score, indicating a better ability to explain the variance in the resale house prices compared to linear regression. Additionally, the RMSE score decreases by 32.7% when using XGBoost, indicating a substantial reduction in the average prediction error range.
+Comparing XGBoost to the base model, which is linear regression, the improvement in performance is striking. XGBoost exhibits an ~18% increase in the R-squared score, indicating a better ability to explain the variance in the resale house prices compared to linear regression. Additionally, the RMSE score decreases by 35.4% when using XGBoost, indicating a substantial reduction in the average prediction error range. 
 
 Considering the significant improvement in both the R-squared score and RMSE, it is reasonable to select XGBoost as the chosen model for predicting resale house prices. XGBoost demonstrates superior predictive power and provides more accurate and precise predictions compared to the base model and other models with hyperparameter tuning.
 
