@@ -57,6 +57,4 @@ Feel free to explore each project by clicking on the corresponding links. Each p
 
 Kindly note that the datasets have been removed as the files are too large. Should you require a copy of dataset, do feel free to drop me a message on linkedin!
 
-
-Contributing
 If you would like to contribute to any of the projects or have suggestions for new projects, please feel free to submit a pull request or open an issue. Your contributions and ideas are highly appreciated!
