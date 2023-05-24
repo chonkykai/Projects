@@ -51,7 +51,7 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 (Future project)
 
-===================================================
+## Final Notes
 
 Feel free to explore each project by clicking on the corresponding links. Each project directory contains a detailed README with further information, setup instructions, and any additional resources that may be required.
 
