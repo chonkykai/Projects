@@ -11,17 +11,17 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 (Completed)
 
-## Project 2: Movie Genre Recommendation
+## Project 2: CinemAI: A Machine Learning Approach for Accurate Movie Quality Prediction
 
-Description: A machine learning Natural Language Processing (NLP) classification project that aims to movie genres from IMDB website
+Description: A machine learning Natural Language Processing (NLP) classification project that aims to develop a predictive model that accurately assesses the quality of a movie.
 
-Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, beautifulsoup, Matplotlib, Jupyterlab, etc.
+Technologies: Python, Pandas, Scikit-learn, beautifulsoup, Matplotlib, Jupyterlab, etc.
 
 Key Features: Webscrapping, data cleaning, NLP exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-(Currently On-going)
+(Completed)
 
-## Project 3: COE Car Price Prediction
+## Project 3: Currency Exchange Rate Prediction
 
 Description: A time series machine learning model that aims to predict Certificate-of-Entitlement(COE) prices of cars.
 
@@ -29,7 +29,7 @@ Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib,, ARIM
 
 Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-(Future project)
+(Ongoing project)
 
 ## Project 4: Trip Advisor Recommender 
 
@@ -54,6 +54,8 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 ===================================================
 
 Feel free to explore each project by clicking on the corresponding links. Each project directory contains a detailed README with further information, setup instructions, and any additional resources that may be required.
+
+Kindly note that the datasets have been removed as the files are too large. Should you require a copy of dataset, do feel free to drop me a message on linkedin!
 
 
 Contributing
