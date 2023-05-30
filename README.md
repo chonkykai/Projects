@@ -51,6 +51,15 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 (Future project)
 
+## University Final Year Project (Neural Network)
+
+Description: A machine learning project that aims to develop a theoretical model on heat and mass transfer mechanisms, analyze effects on different operating conditions of cooling tower, develop and predict a neural network machine learning model to predict cooling tower outlet conditions 
+
+Technologies: MATLAB, ANSYS(Fluent), Machine Learning, Data Visualization
+
+Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction.
+
+
 ## Final Notes
 
 Feel free to explore each project by clicking on the corresponding links. Each project directory contains a detailed README with further information, setup instructions, and any additional resources that may be required.
