@@ -9,7 +9,7 @@ Technologies: MATLAB, ANSYS(Fluent), Machine Learning, Data Visualization
 
 Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction.
 
-[Link](https://github.com/chonkykai/Projects/tree/main/Cooling_Tower_Prediction)
+[Click me! ๑(◕‿◕)๑](https://github.com/chonkykai/Projects/tree/main/Cooling_Tower_Prediction)
 
 (Grade: Distinction)
 
@@ -21,7 +21,7 @@ Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib, Jupyt
 
 Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-[Link](https://github.com/chonkykai/Projects/tree/main/house_price_prediction)
+[Click me! ( ๑‾̀◡‾́)σ"](https://github.com/chonkykai/Projects/tree/main/house_price_prediction)
 
 (Completed)
 
@@ -33,7 +33,7 @@ Technologies: Python, Pandas, Scikit-learn, beautifulsoup, Matplotlib, Jupyterla
 
 Key Features: Webscrapping, data cleaning, NLP exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-[Link](https://github.com/chonkykai/Projects/tree/main/CinemAI)
+[Click me! Σ(♡＠﹏ ＠☆)ﾉ"](https://github.com/chonkykai/Projects/tree/main/CinemAI)
 
 (Completed)
 
@@ -45,7 +45,7 @@ Technologies: Python, Pandas, Scikit-learn, Matplotlib,, ARIMA, ARIMAX, PROPHET,
 
 Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-[Link](https://github.com/chonkykai/Projects/tree/main/Currency_Crystal_Ball)
+[Click me! ♡(ŐωŐ人)](https://github.com/chonkykai/Projects/tree/main/Currency_Crystal_Ball)
 
 (Completed)
 
