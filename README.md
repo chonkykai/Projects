@@ -49,7 +49,17 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 (Completed)
 
-## Project 4: Trip Advisor Recommender 
+## Project 4: Sign language translator (Computer Vision)
+
+Description: A computer vision project that aims to translate sign language into words that can be understood by a person that has no prior experience to sign language.
+
+Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib,, ARIMA, Jupyterlab, Computer vision, etc.
+
+Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction.
+
+(On going)
+
+## Project 5: Trip Advisor Recommender 
 
 Description: A recommender machine learning model that aims to recommend user places to travel based on the user's preference and constrains
 
@@ -59,13 +69,13 @@ Key Features: Webscrapping, data cleaning, NLP exploratory data analysis, visual
 
 (Future project)
 
-## Project 5: Sign language translator (Computer Vision)
+## project 6: Stock market predictor
 
-Description: A computer vision project that aims to translate sign language into words that can be understood by a person that has no prior experience to sign language.
+Description: A time series machine learning model that aims to predict a particular stock such as google/SMP500/AWS.
 
-Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib,, ARIMA, Jupyterlab, Computer vision, etc.
+Technologies: Python, Pandas, Scikit-learn, Matplotlib,, ARIMA, ARIMAX, PROPHET, Jupyterlab, etc.
 
-Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction.
+Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
 (Future project)
 
