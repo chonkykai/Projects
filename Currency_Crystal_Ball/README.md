@@ -60,7 +60,7 @@ Nevertheless, a contrasting trend emerges as the CNY gradually weakens over time
 
 Observations:
 
-An intriguing observation unfolds as we delve into the realm of currency fluctuations, specifically focusing on the Thai Baht (THB). Notably, the THB reached its lowest point in 2013, driven by Thailand's astute response to the [taper tantrum](https://www.cfr.org/blog/follow-thai-baht) that year. However, a subsequent depreciation occurred in 2015, attributed to the China scare. Moreover, recent observations indicate a renewed depreciation trend for THB starting in 2020, predominantly influenced by the [global economic downturn](https://www.voanews.com/a/thailand-welcomes-tourism-economic-progress-looks-ahead-to-2023-elections-/6908283.html) caused by the COVID-19 pandemic. Thailand, heavily reliant on tourism, experienced a notable 6% decline in its economy during 2020. Nonetheless, promising signs of recovery are now emerging as Thailand gradually rebounds from the impact of the global economic downturn.
+An intriguing observation unfolds as we delve into the realm of currency fluctuations, specifically focusing on the Thai Baht (THB). Notably, the THB reached its highest appreciation in 2013, driven by Thailand's astute response to the [taper tantrum](https://www.cfr.org/blog/follow-thai-baht) that year. However, a subsequent depreciation occurred in 2015, attributed to the China scare. Moreover, recent observations indicate a renewed depreciation trend for THB starting in 2020, predominantly influenced by the [global economic downturn](https://www.voanews.com/a/thailand-welcomes-tourism-economic-progress-looks-ahead-to-2023-elections-/6908283.html) caused by the COVID-19 pandemic. Thailand, heavily reliant on tourism, experienced a notable 6% decline in its economy during 2020. Nonetheless, promising signs of recovery are now emerging as Thailand gradually rebounds from the impact of the global economic downturn.
 
 ### Singapore Dollar (SGD)
 
@@ -104,6 +104,8 @@ Upon examination of the data, it becomes apparent that the graph represents a re
 
 ## Augmented Dickey-Fuller Test
 
+To commence our analysis with the base model, it is crucial to establish the stationarity of the data. For this purpose, we employ the [Augmented Dickey-Fuller (ADF) Test](https://www.analyticsvidhya.com/blog/2021/06/statistical-tests-to-check-stationarity-in-time-series-part-1/#:~:text=The%20ADF%20test%20is%20used,the%20time%20series%20is%20stationary.), which helps us determine the presence of a unit root in the time series. In the event that the null hypothesis is rejected, it signifies that the time series exhibits stationarity.
+
 ![sgd_rs_2](./image/sgd_rs_2.png)
 
 Upon careful examination of the resampled graph, it becomes evident that the data exhibits non-stationarity. This finding is further supported by the [Augmented Dickey-Fuller(AFT)](https://www.analyticsvidhya.com/blog/2021/06/statistical-tests-to-check-stationarity-in-time-series-part-1/#:~:text=The%20null%20hypothesis%20of%20the,root%20in%20the%20time%20series.) test, where the resulting value of 0.574 fails to provide sufficient evidence to reject the null hypothesis, indicating the non-stationarity of the time series.
@@ -132,6 +134,10 @@ These findings suggest that there is room for improvement in the model's predict
 
 ## Autocorrelation Function
 
+The [autocorrelation](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35c.htm#:~:text=The%20autocorrelation%20(%20Box%20and%20Jenkins,the%20data%20are%20not%20random.) ( Box and Jenkins, 1976) function can be used for the following two purposes: 
+1. To detect non-randomness in data. 
+2. To identify an appropriate time series model if the data are not random.
+
 ![acf](./image/acf.png)
 
 Upon careful examination of the Autocorrelation Function (ACF) graph, it becomes apparent that certain bars stand out, displaying higher values compared to others. These elevated bars signify a robust correlation between the observation and its lagged values, suggesting a stronger temporal relationship.
@@ -154,7 +160,7 @@ To overcome these limitations and achieve more accurate and reliable predictions
 
 ![prophet](./image/prophet.png)
 
-When the Prophet model was introduced, it achieved a lower MAPE (Mean Absolute Percentage Error) of 1.73 compared to SARIMAX's MAPE of 1.96. This indicates that the Prophet model had a better overall accuracy in forecasting. However, upon plotting the predicted data against the test data, it became apparent that the model struggled to capture the fluctuations present in the test data.
+When the Prophet model was introduced, the MAPE (Mean Absolute Percentage Error) of 1.73 was way lower as compared to base model's MAPE of 1275338280835. This indicates that the Prophet model had a better overall accuracy in forecasting. However, upon plotting the predicted data against the test data, it became apparent that the model struggled to capture the fluctuations present in the test data.
 
 Despite this limitation, Prophet provides a valuable feature known as the uncertainty interval. The uncertainty interval is a measure of the model's confidence in its predictions. With a 95% uncertainty interval, Prophet estimates that there is a 95% probability that the actual values will fall within the interval surrounding the forecasted values.
 
@@ -166,7 +172,7 @@ In summary, while the Prophet model may struggle to capture the full range of fl
 
 ![sarimax](./image/sarimax.png)
 
-The most optimal model in SARIMAX was ARIMA(0,0,3)(0,0,0)[5]. The MAPE(1.9631024127647674) was significantly lower as compared to the base model (1275338280835.6262). This improvement is reflected in the graph as shown. The predictions are able to fluctuations and patterns exhibited by the test data. On further investigations, the model might have been over estimating on certain fluctuation patterns by the test data. 
+The most optimal model in SARIMAX was ARIMA(0,0,3)(0,0,0)[5]. The MAPE(1.96) was significantly lower as compared to the base model (1275338280835.6262). This improvement is reflected in the graph as shown. The predictions are able to fluctuations and patterns exhibited by the test data. On further investigations, the model might have been over estimating on certain fluctuation patterns by the test data. 
 
 # Discussion
 
@@ -174,8 +180,8 @@ The most optimal model in SARIMAX was ARIMA(0,0,3)(0,0,0)[5]. The MAPE(1.9631024
 |:------------:|:------------------:|:-----------:|
 |   ARIMA      |   1275338280835    |   0.02032   |
 |   SARIMA     |   1092819418076    |   0.0195    |
-|   PROPHET    |   1.729            |   0.0408    | 
-|   SARIMAX    |   1.963            |   0.0345    |
+|   PROPHET    |   1.72             |   0.0408    | 
+|   SARIMAX    |   1.96             |   0.0345    |
 
 Based on the analysis, the table reveals that SARIMA achieves the lowest RMSE among the considered models. However, SARIMA's MAPE is relatively high compared to Prophet and SARIMAX. Therefore, the preferable options are Prophet and SARIMAX. Although Prophet exhibits a slightly lower MAPE compared to SARIMAX, the visual inspection of the prediction versus test data graphs indicates that SARIMAX effectively captures the intricate fluctuation patterns displayed by the test data. Consequently, SARIMAX emerges as the preferred model for accurate predictions of SGD's currency.
 
