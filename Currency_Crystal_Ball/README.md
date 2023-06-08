@@ -138,8 +138,6 @@ The autocorrelation ( Box and Jenkins, 1976) function can be used for the follow
 1. To detect non-randomness in data. 
 2. To identify an appropriate time series model if the data are not random.
 
-[Link](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35c.htm#:~:text=The%20autocorrelation%20(%20Box%20and%20Jenkins,the%20data%20are%20not%20random.)
-
 ![acf](./image/acf.png)
 
 Upon careful examination of the Autocorrelation Function (ACF) graph, it becomes apparent that certain bars stand out, displaying higher values compared to others. These elevated bars signify a robust correlation between the observation and its lagged values, suggesting a stronger temporal relationship.
