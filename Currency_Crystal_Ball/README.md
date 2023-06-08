@@ -134,9 +134,11 @@ These findings suggest that there is room for improvement in the model's predict
 
 ## Autocorrelation Function
 
-The [autocorrelation](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35c.htm#:~:text=The%20autocorrelation%20(%20Box%20and%20Jenkins,the%20data%20are%20not%20random.) ( Box and Jenkins, 1976) function can be used for the following two purposes: 
+The autocorrelation ( Box and Jenkins, 1976) function can be used for the following two purposes: 
 1. To detect non-randomness in data. 
 2. To identify an appropriate time series model if the data are not random.
+
+[Link](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35c.htm#:~:text=The%20autocorrelation%20(%20Box%20and%20Jenkins,the%20data%20are%20not%20random.)
 
 ![acf](./image/acf.png)
 
@@ -150,7 +152,7 @@ By engaging in this iterative process of exploration and experimentation, we can
 
 ![sarima](./image/sarima.png)
 
-After thorough evaluation, it is evident that the optimal SARIMA model is ARIMA(2,0,1)(3,0,0)[5]. A noteworthy enhancement in the Mean Absolute Percentage Error (MAPE) score is observed, with the SARIMA model (1092819418076.1602) outperforming the base model (1275338280835.6262).
+After thorough evaluation, it is evident that the optimal SARIMA model is ARIMA(2,0,1)(3,0,0)[5]. A noteworthy enhancement in the Mean Absolute Percentage Error (MAPE) score is observed, with the SARIMA model (1092819418076.16) outperforming the base model (1275338280835.62).
 
 However, despite these improvements in the evaluation metrics, it is essential to acknowledge that the model's predictions continue to fall short in capturing the intricate fluctuation patterns exhibited by the test data. Moreover, although there has been progress in reducing the MAPE score, it remains relatively high, indicating room for further enhancements in the model's predictive capabilities.
 
@@ -160,7 +162,7 @@ To overcome these limitations and achieve more accurate and reliable predictions
 
 ![prophet](./image/prophet.png)
 
-When the Prophet model was introduced, the MAPE (Mean Absolute Percentage Error) of 1.73 was way lower as compared to base model's MAPE of 1275338280835. This indicates that the Prophet model had a better overall accuracy in forecasting. However, upon plotting the predicted data against the test data, it became apparent that the model struggled to capture the fluctuations present in the test data.
+When the Prophet model was introduced, the MAPE (Mean Absolute Percentage Error) of 1.73 was way lower as compared to base model's MAPE of 1275338280835.62. This indicates that the Prophet model had a better overall accuracy in forecasting. However, upon plotting the predicted data against the test data, it became apparent that the model struggled to capture the fluctuations present in the test data.
 
 Despite this limitation, Prophet provides a valuable feature known as the uncertainty interval. The uncertainty interval is a measure of the model's confidence in its predictions. With a 95% uncertainty interval, Prophet estimates that there is a 95% probability that the actual values will fall within the interval surrounding the forecasted values.
 
