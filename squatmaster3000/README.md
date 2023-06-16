@@ -1,4 +1,4 @@
-# Revolutionizing Rep Counting: Enhancing Squat Performance in Powerlifting Competitions through Computer Vision
+# Squatmaster3000: Enhancing Squat Performance in Powerlifting Competitions through Computer Vision
 
 ## Preface
 
