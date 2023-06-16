@@ -55,7 +55,7 @@ Description: A computer vision project that aims to tackle the issue of human bi
 
 Technologies: Python, openCV, Mediapipe
 
-Key Features: Computer vision, video datas
+Key Features: Computer vision, video data
 
 [Click me! d(=‘ｘ‘=)b](https://github.com/chonkykai/Projects/tree/main/squatmaster3000)
 
