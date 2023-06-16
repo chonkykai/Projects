@@ -49,15 +49,15 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 (Completed)
 
-## Project 4: Sign language translator (Computer Vision)
+## Project 4: Squatmaster3000: Enhancing Squat Performance in Powerlifting Competitions through Computer Vision
 
-Description: A computer vision project that aims to translate sign language into words that can be understood by a person that has no prior experience to sign language.
+Description: A computer vision project that aims to check and ensure that the exercise performed by an individual is done correctly.
 
-Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib,, ARIMA, Jupyterlab, Computer vision, etc.
+Technologies: Python, openCV, Mediapipe
 
-Key Features: Data cleaning, exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction.
+[Click me! d(=‘ｘ‘=)b](https://github.com/chonkykai/Projects/tree/main/squatmaster3000)
 
-(On going)
+(Completed)
 
 ## Project 5: Trip Advisor Recommender 
 
@@ -67,7 +67,7 @@ Technologies: Python, Pandas, Scikit-learn, TensorFlow, Keras, beautifulsoup, Ma
 
 Key Features: Webscrapping, data cleaning, NLP exploratory data analysis, visualization of trends and patterns, Data preprocessing, model training and evaluation, prediction and classification.
 
-(Future project)
+(Ongoing)
 
 ## project 6: Stock market predictor
 
