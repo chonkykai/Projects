@@ -51,7 +51,7 @@ Key Features: Data cleaning, exploratory data analysis, visualization of trends 
 
 ## Project 4: Squatmaster3000: Enhancing Squat Performance in Powerlifting Competitions through Computer Vision
 
-Description: A computer vision project that aims to check and ensure that the exercise performed by an individual is done correctly.
+Description: A computer vision project that aims to tackle the issue of human bias in squat lift evaluation and provide powerlifters a reliable tool that helps them train effectively for competitions.
 
 Technologies: Python, openCV, Mediapipe
 
